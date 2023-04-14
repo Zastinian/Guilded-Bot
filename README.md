@@ -1,6 +1,6 @@
 ## Config File
 
-[Config](/src/config/index.js)
+- [Config](/src/config/index.js)
 
 ## Contributors
 
