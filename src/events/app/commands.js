@@ -17,7 +17,7 @@ export default {
 			const commandName = args.shift().toLowerCase();
 			const command = Hedystia.commands.get(commandName) || Hedystia.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
 			if (!command) return;
-			command.run(Hedystia, message, args, p);
+			command.run(Hedystia, message, args, config, p);
 		} catch (err) {
 			return;
 		}
