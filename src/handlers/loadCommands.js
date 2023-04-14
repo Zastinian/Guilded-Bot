@@ -1,5 +1,5 @@
 import {readdirSync} from "fs";
-export default async function loadCommands(Hedystia) {
+export default async function loadCommands(BotClient) {
 	const commandFolders = readdirSync("./src/commands");
 	for (const folder of commandFolders) {
 		const commandFiles = readdirSync(`./src/commands/${folder}`).filter((file) => file.endsWith(".js"));
@@ -7,11 +7,11 @@ export default async function loadCommands(Hedystia) {
 			const loaded = await import(`../commands/${folder}/${file}`);
 			const command = loaded.default;
 			if (command.name) {
-				Hedystia.commands.set(command.name, command);
+				BotClient.commands.set(command.name, command);
 			} else {
 				continue;
 			}
-			if (command.aliases && Array.isArray(command)) command.aliases.forEach((alias) => Hedystia.aliases.set(alias, command.name));
+			if (command.aliases && Array.isArray(command)) command.aliases.forEach((alias) => BotClient.aliases.set(alias, command.name));
 		}
 	}
 }

@@ -1,7 +1,7 @@
 export default {
 	event_name: "ready",
-	run: (Hedystia) => {
+	run: (BotClient) => {
 		console.clear();
-		console.log(`[API] ${Hedystia.user.name} Se encuentra en linea!`);
+		console.log(`[API] ${BotClient.user.name} Se encuentra en linea!`);
 	},
 };

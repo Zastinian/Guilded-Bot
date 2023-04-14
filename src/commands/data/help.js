@@ -3,7 +3,7 @@ import {Embed} from "guilded.js";
 export default {
 	name: "help",
 	description: "Help",
-	run: async (Hedystia, message, args, config) => {
+	run: async (BotClient, message, args, config) => {
 		const embed = new Embed()
 			.setColor(0x0099ff)
 			.setTitle("Help Menu")

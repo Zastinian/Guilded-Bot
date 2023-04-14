@@ -1,2 +1,2 @@
-import Hedystia from "./src/lib/Hedystia.js";
-new Hedystia();
+import BotClient from "./src/lib/BotClient.js";
+new BotClient().login();
