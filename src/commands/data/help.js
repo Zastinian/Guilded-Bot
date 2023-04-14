@@ -18,7 +18,6 @@ export default {
 				"https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTMyYzU4YTVjNjNlZWUwZTgwN2ZiMDgxYzVlOGE0NGRhYTM3MmE1NCZjdD1z/K9svE9i7P3Ox2/giphy.gif"
 			)
 			.addField("Command", config.PREFIX + "help", true)
-			.addField("Command", config.PREFIX + "user", true)
 			.setImage("https://c.tenor.com/yi5btxWVAwwAAAAC/tenor.gif")
 			.setTimestamp()
 			.setFooter(
