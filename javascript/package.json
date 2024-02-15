@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "guilded.js": "^0.20.0"
+    "guilded.js": "^0.23.7"
   },
   "type": "module"
 }
